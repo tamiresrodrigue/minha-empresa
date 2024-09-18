@@ -1,0 +1,71 @@
+.pai-dos-lados {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.pai-dos-lados div {
+    width: 50%;
+}
+
+.pai-dos-lados .lado-direito img {
+    width: 100%;
+}
+
+.pai-dos-lados .lado-esquerdo p {
+    text-align: justify;
+}
+
+.pai-dos-lados .lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pai-dos-lados .lado-esquerdo h1, .newsletter h2 {
+    text-transform: uppercase;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.newsletter .title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.newsletter form input {
+    padding: 10px 6px;
+}
+
+@media screen and (max-width: 780px) { 
+    .newsletter .form{
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .pai-dos-lados{
+        flex-direction: column-reverse;
+    }
+    .pai-dos-lados div {
+        width: 100%;
+    }
+}
+.btn {
+    width: 250px;
+    border: 2px black solid;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: black 3px 3px 0px;
+    cursor: pointer;
+    text-align: center;
+}
