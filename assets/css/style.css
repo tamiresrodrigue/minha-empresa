@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,9 @@
     background-color: #333;
     color: #fff;
     padding: 30px 60px;
+}
+.cabecalho h1{
+    animation: movimentar 3s;
 }
 
 .cabecalho ul {
@@ -24,10 +28,14 @@
 .cabecalho ul li a {
     color: #fff;
 }
+.cabecalho nav ul li .selected{
+    background: #fff;
+    color: #333;
+}
 
 .cabecalho .menu {
     display: none;
-}
+}   
 
 .main {
     padding: 30px 60px;
@@ -55,14 +63,36 @@
     }
     
 }
-
 .cabecalho ul li a:hover{
- color: #444;
- transition: 0.5s;
-}
+    color: #444;
+    transition: 0.5s;
+   }
+   
 
 @media screen and (max-width: 650px) {
    .main{
     padding: 10px;
    }
+}
+
+@keyframes balada{
+    0% {
+        color: green;
+    }
+    50% {
+        color: white;
+    }
+    100%{
+        color: blue;
+        }
+}
+  
+@keyframes movimentar{
+    0%{
+    transform: translate(-300px);
+    
+    }
+    100%{
+    transform: translate(0);
+    }
 }

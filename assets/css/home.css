@@ -69,3 +69,7 @@
     cursor: pointer;
     text-align: center;
 }
+body {
+    background: linear-gradient(to top, #4c87be, #639745, rgba(58, 122, 218, 0.76));
+    
+}

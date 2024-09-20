@@ -1,0 +1,8 @@
+body {
+    background-image: url(../img/fundo\ da\ minhaempresa.avif);
+    background-repeat: no-repeat; /* fundo para ñ repetir */
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    backdrop-filter: blur(4px);
+}
